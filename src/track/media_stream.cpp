@@ -56,8 +56,8 @@ static const std::vector<StreamData> stream_data{
     L"http://www.crunchyroll.com",
     std::regex(
       "crunchyroll\\.[a-z.]+/[^/]+/(?:"
-        "episode-[0-9]+.*|"
-        ".*-(?:movie|ona|ova)"
+      "episode-[0-9]+.*|"
+      ".*-(?:movie|ona|ova)"
       ")-[0-9]+"
     ),
     std::regex("Crunchyroll - Watch (?:(.+) - (?:Movie - Movie|ONA - ONA|OVA - OVA)|(.+))"),
@@ -69,6 +69,24 @@ static const std::vector<StreamData> stream_data{
     L"HIDIVE",
     L"https://www.hidive.com",
     std::regex("hidive\\.com/stream/"),
+    std::regex("(.+)"),
+  },
+  // Kiss Anime
+  {
+    Stream::KissAnime,
+    taiga::kStream_KissAnime,
+    L"KissAnime",
+    L"http://kissanime.ru",
+    std::regex("kissanime\\.[a-z.]+/[^\/]+/[^\/]+/(?:Episode-[0-9].+|Movie|ONA|OVA)\?id=.+"),
+  std::regex("(.+)"),
+  },
+  // MasterAni.me
+  {
+    Stream::MasterAnime,
+    taiga::kStream_MasterAnime,
+    L"MasterAnime",
+    L"https://www.masterani.me",
+    std::regex("masterani\\.me/anime/watch/"),
     std::regex("(.+)"),
   },
   // Plex Web App
