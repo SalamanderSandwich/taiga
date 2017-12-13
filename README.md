@@ -15,3 +15,10 @@ Visit our [home page](http://taiga.moe) for more information. See the [guideline
 ## License
 
 Taiga is licensed under [GNU General Public License v3](https://www.gnu.org/licenses/gpl-3.0.html).
+
+## Changes
+
+This fork will focus on adding additional streaming sites to the supported list. So far the following extra are supported:
+
+-KissAnime
+-MasterAnime
